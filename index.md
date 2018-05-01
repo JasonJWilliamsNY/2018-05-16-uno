@@ -206,7 +206,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% elsif page.carpentry == "lc" %}
   {% include lc/schedule.html %}
 {% endif %}
-
+<br>
+<p> </p>
 {% comment %}
   Collaborative Notes
 
@@ -217,8 +218,13 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   where 'YYYY-MM-DD-site' is the identifier for your workshop,
   e.g., '2015-06-10-esu'.
 {% endcomment %}
+
 {% if page.collaborative_notes %}
+<br>
+<p></p>
 <p id="collaborative_notes">
+<br>
+<p></p>
   We will use this <a href="{{page.collaborative_notes}}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
 </p>
 {% endif %}
